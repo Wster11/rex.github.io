@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Rex Wang">
+    
+    <title>
+        
+            基于环信IM30分钟开发即使通讯应用 |
+        
+        Rex&#39;s Blog
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/avatar.jpeg">
+    
+<link rel="stylesheet" href="/fontawesome/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/css/brands.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"rexking.me","root":"/","language":"en"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":false,"init_open":false},"style":{"primary_color":"#d48b41","logo":"/images/avatar.jpeg","favicon":"/images/avatar.jpeg","avatar":"/images/avatar.jpeg","font_size":null,"font_family":null,"hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"header_transparent":true,"background_img":"/images/bg.svg","description":"What happens here, stays here.","font_color":null,"hitokoto":false},"scroll":{"progress_bar":true,"percent":false}},"local_search":{"enable":false,"preload":false},"code_copy":{},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"side_tools":{},"pjax":{"enable":false},"lazyload":{"enable":false},"comment":{"enable":true,"use":"gitalk","valine":{"appid":null,"appkey":null,"placeholder":null},"gitalk":{"github_id":"Wster11","github_admins":null,"repository":"gitalk","client_id":"c1066502745b5039f0b3","client_secret":"3f28cf9eeabae08e04501f1289d0635d1a5b870f"},"twikoo":{"env_id":null,"region":null,"version":"1.6.7"},"waline":{"server_url":null,"reaction":false,"version":2}},"post":{"author_label":{"enable":true,"auto":true,"custom_label_list":["Trainee","Engineer","Architect"]},"word_count":{"enable":false,"wordcount":false,"min2read":false},"img_align":"left","copyright_info":false},"version":"3.5.2"};
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+    KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"};
+  </script>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="/images/avatar.jpeg">
+                </a>
+            
+            <a class="logo-title" href="/">
+               Rex&#39;s Blog
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                HOME
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                ARCHIVES
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                ABOUT
+                            </a>
+                        </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">HOME</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">ARCHIVES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">ABOUT</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            <div class="article-title">
+                <span class="title-hover-animation">基于环信IM30分钟开发即使通讯应用</span>
+            </div>
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="/images/avatar.jpeg">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">Rex Wang</span>
+                            
+                                <span class="author-label">Lv1</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            
+<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        
+            <i class="fa-regular fa-calendar-plus"></i>&nbsp;
+        
+        <span class="pc">2022-10-20 13:39:32</span>
+        <span class="mobile">2022-10-20 13:39</span>
+    </span>
+    
+        <span class="article-update-date article-meta-item">
+        <i class="fas fa-file-pen"></i>&nbsp;
+        <span class="pc">2023-04-20 14:18:02</span>
+    </span>
+    
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/IM/">IM</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                <h1 id="创建uniapp项目"><a href="#创建uniapp项目" class="headerlink" title="创建uniapp项目"></a>创建uniapp项目</h1><ul>
+<li>通过HbuilderX可视化界面（推荐)</li>
+<li>使用vue-cli命令行创建（确保全局安装了vue-cli）<br><br>vue create -p dcloudio&#x2F;uni-preset-vue my-project (vue2) <br><br>npx degit dcloudio&#x2F;uni-preset-vue#vite my-vue3-project (vue3) <blockquote>
+<p>区别: <br> cli创建的项目，是传统的node项目结构。工程代码在src目录下，编译器在项目下，编译结果在dist目录下。<br> HBuilderX可视化创建的项目，是一种免node开发概念。工程代码在项目目录下，编译器在HBuilderX目录下而不是项目下，编译结果在项目的unpackage 目录下。</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="使用Uniapp构建环信即时通讯应用"><a href="#使用Uniapp构建环信即时通讯应用" class="headerlink" title="使用Uniapp构建环信即时通讯应用"></a>使用Uniapp构建环信即时通讯应用</h1><p><a target="_blank" rel="noopener" href="https://github.com/Wster11/uniapp-webim-sample">DEMO地址</a> </p>
+<p>实现功能:</p>
+<ul>
+<li>登录</li>
+<li>注册</li>
+<li>添加好友</li>
+<li>收发图片消息</li>
+</ul>
+<p>首先, 我们需要引入环信<a target="_blank" rel="noopener" href="https://github.com/easemob/webim-uniapp-demo/tree/master/newSDK">小程序sdk</a></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> webIM <span class="keyword">from</span> <span class="string">&quot;../sdk/uniapp-sdk-4.1.2&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 以下配置信息可从console后台管理获得 即时通讯/服务概览/域名配置</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">const</span> <span class="variable constant_">IM_CONFIG</span> = &#123;</span><br><span class="line">  <span class="attr">isHttpDNS</span>: <span class="literal">false</span>, <span class="comment">// 开启后会从服务器取连接地址，目前不支持uniapp、小程序</span></span><br><span class="line">  <span class="attr">appKey</span>: <span class="string">&quot;1161210719091872#demo&quot;</span>,</span><br><span class="line">  <span class="attr">apiUrl</span>: <span class="string">&quot;https://a1.easemob.com&quot;</span>,</span><br><span class="line">  <span class="attr">url</span>: <span class="string">&quot;ws://im-api-wechat.easemob.com/websocket&quot;</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> conn = <span class="keyword">new</span> webIM.<span class="title function_">connection</span>(<span class="variable constant_">IM_CONFIG</span>);</span><br><span class="line">uni.<span class="property">conn</span> = conn; <span class="comment">// 将conn挂在到全局</span></span><br></pre></td></tr></table></figure>
+<p>这样我们就完成了sdk的初始化。</p>
+<blockquote>
+<p>在使用的过程中需要将appKey替换为你自己的appKey。</p>
+</blockquote>
+<p>监听SDK事件，   <a target="_blank" rel="noopener" href="http://webim-h5.easemob.com/jsdoc/out/interfaces/Types.EventHandlerType.EventHandlerType.html">SDK事件列表</a></p>
+<p>uniapp内置了vuex，使用vuex存储了uid和msglist的Map对象， 消息展示时根据当前uid获取msglist。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 监听消息事件</span></span><br><span class="line">conn.<span class="title function_">addEventHandler</span>(<span class="string">&quot;message&quot;</span>, &#123;</span><br><span class="line">  <span class="attr">onTextMessage</span>: <span class="function">(<span class="params">message</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// 表示是多端同步过来的消息，收到消息push到vuex</span></span><br><span class="line">    <span class="keyword">let</span> uid = message.<span class="property">from</span> === uni.<span class="property">conn</span>.<span class="property">user</span> ? message.<span class="property">to</span> : message.<span class="property">from</span>;</span><br><span class="line">    store.<span class="title function_">commit</span>(<span class="string">&quot;pushMessage&quot;</span>, &#123; uid, <span class="attr">msg</span>: message &#125;);</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">onImageMessage</span>: <span class="function">(<span class="params">message</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> uid = message.<span class="property">from</span> === uni.<span class="property">conn</span>.<span class="property">user</span> ? message.<span class="property">to</span> : message.<span class="property">from</span>;</span><br><span class="line">    store.<span class="title function_">commit</span>(<span class="string">&quot;pushMessage&quot;</span>, &#123; uid, <span class="attr">msg</span>: message &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// 监听好友事件</span></span><br><span class="line">conn.<span class="title function_">addEventHandler</span>(<span class="string">&quot;contact&quot;</span>, &#123;</span><br><span class="line">  <span class="attr">onContactInvited</span>: <span class="function">(<span class="params">message</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(message, <span class="string">&quot;contact invite msg&quot;</span>);</span><br><span class="line">    uni.<span class="title function_">showModal</span>(&#123;</span><br><span class="line">      <span class="attr">title</span>: <span class="string">`<span class="subst">$&#123;message.<span class="keyword">from</span>&#125;</span>请求添加好友`</span>,</span><br><span class="line">      <span class="attr">content</span>: message.<span class="property">status</span>,</span><br><span class="line">      <span class="attr">cancelText</span>: <span class="string">&quot;拒绝&quot;</span>,</span><br><span class="line">      <span class="attr">confirmText</span>: <span class="string">&quot;接受&quot;</span>,</span><br><span class="line">      <span class="attr">success</span>: <span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (res.<span class="property">confirm</span> === <span class="literal">true</span>) &#123;</span><br><span class="line">          <span class="comment">// 接受好友申请</span></span><br><span class="line">          conn.<span class="title function_">acceptContactInvite</span>(message.<span class="property">from</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          <span class="comment">// 拒绝好友申请</span></span><br><span class="line">          conn.<span class="title function_">declineContactInvite</span>(message.<span class="property">from</span>);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">onContactAgreed</span>: <span class="function">(<span class="params">message</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(message, <span class="string">&quot;contact agreed msg&quot;</span>);</span><br><span class="line">    uni.<span class="title function_">showToast</span>(&#123;</span><br><span class="line">      <span class="attr">icon</span>: <span class="string">&quot;none&quot;</span>,</span><br><span class="line">      <span class="attr">title</span>: <span class="string">`<span class="subst">$&#123;message.<span class="keyword">from</span>&#125;</span>已同意你的好友申请`</span></span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">onContactRefuse</span>: <span class="function">(<span class="params">message</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(message, <span class="string">&quot;contact refuse msg&quot;</span>);</span><br><span class="line">    uni.<span class="title function_">showToast</span>(&#123;</span><br><span class="line">      <span class="attr">icon</span>: <span class="string">&quot;none&quot;</span>,</span><br><span class="line">      <span class="attr">title</span>: <span class="string">`<span class="subst">$&#123;message.<span class="keyword">from</span>&#125;</span>已拒绝你的好友申请`</span></span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>conn.addEventHandler(“eventType”, {}), eventType为用户自定义事件名称</p>
+</blockquote>
+<p>登录功能</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">conn</span><br><span class="line">  .<span class="title function_">open</span>(&#123;</span><br><span class="line">    <span class="attr">user</span>: <span class="variable language_">this</span>.<span class="property">user</span>,</span><br><span class="line">    <span class="attr">pwd</span>: <span class="variable language_">this</span>.<span class="property">pwd</span></span><br><span class="line">  &#125;)</span><br><span class="line">  .<span class="title function_">then</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// 跳转首页</span></span><br><span class="line">    uni.<span class="title function_">switchTab</span>(&#123;</span><br><span class="line">      <span class="attr">url</span>: <span class="string">&quot;../contacts/index&quot;</span></span><br><span class="line">    &#125;);</span><br><span class="line">    uni.<span class="title function_">showToast</span>(&#123;</span><br><span class="line">      <span class="attr">icon</span>: <span class="string">&quot;none&quot;</span>,</span><br><span class="line">      <span class="attr">title</span>: <span class="string">&quot;登录成功&quot;</span></span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;)</span><br><span class="line">  .<span class="title function_">catch</span>(<span class="function">(<span class="params">e</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (e.<span class="property">data</span>.<span class="property">data</span>.<span class="property">error_description</span> === <span class="string">&quot;invalid password&quot;</span>) &#123;</span><br><span class="line">      uni.<span class="title function_">showToast</span>(&#123;</span><br><span class="line">        <span class="attr">icon</span>: <span class="string">&quot;none&quot;</span>,</span><br><span class="line">        <span class="attr">title</span>: <span class="string">&quot;用户名或密码错误&quot;</span></span><br><span class="line">      &#125;);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      uni.<span class="title function_">showToast</span>(&#123;</span><br><span class="line">        <span class="attr">icon</span>: <span class="string">&quot;none&quot;</span>,</span><br><span class="line">        <span class="attr">title</span>: <span class="string">&quot;登录失败&quot;</span></span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">  .<span class="title function_">finally</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">loading</span> = <span class="literal">false</span>;</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure>
+<p>注册功能</p>
+<blockquote>
+<p>通过SDK注册用户，需要在Console控制台将该appKey的用户注册模式设置为 <code>开放注册</code></p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">conn</span><br><span class="line">       .<span class="title function_">registerUser</span>(&#123;</span><br><span class="line">         <span class="attr">username</span>: <span class="variable language_">this</span>.<span class="property">user</span>,</span><br><span class="line">         <span class="attr">password</span>: <span class="variable language_">this</span>.<span class="property">pwd</span></span><br><span class="line">       &#125;)</span><br><span class="line">       .<span class="title function_">then</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">         uni.<span class="title function_">showToast</span>(&#123;</span><br><span class="line">           <span class="attr">icon</span>: <span class="string">&quot;none&quot;</span>,</span><br><span class="line">           <span class="attr">title</span>: <span class="string">&quot;注册成功&quot;</span></span><br><span class="line">         &#125;);</span><br><span class="line">         uni.<span class="title function_">redirectTo</span>(&#123;</span><br><span class="line">           <span class="attr">url</span>: <span class="string">&quot;../index/index&quot;</span></span><br><span class="line">         &#125;);</span><br><span class="line">       &#125;)</span><br><span class="line">       .<span class="title function_">catch</span>(<span class="function">(<span class="params">e</span>) =&gt;</span> &#123;</span><br><span class="line">         uni.<span class="title function_">showToast</span>(&#123;</span><br><span class="line">           <span class="attr">icon</span>: <span class="string">&quot;none&quot;</span>,</span><br><span class="line">           <span class="attr">title</span>: <span class="string">&quot;注册失败&quot;</span></span><br><span class="line">         &#125;);</span><br><span class="line">       &#125;)</span><br><span class="line">       .<span class="title function_">finally</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">         <span class="variable language_">this</span>.<span class="property">loading</span> = <span class="literal">false</span>;</span><br><span class="line">       &#125;);</span><br></pre></td></tr></table></figure>
+
+<p>添加好友功能</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// this.uid为环信uid</span></span><br><span class="line"><span class="title function_">addContact</span>(<span class="params"></span>) &#123;</span><br><span class="line">  conn.<span class="title function_">addContact</span>(<span class="variable language_">this</span>.<span class="property">uid</span>, <span class="string">&quot;加个好友吧～&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>获取好友列表</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">getContacts</span>(<span class="params"></span>) &#123;</span><br><span class="line">  uni.<span class="property">conn</span>.<span class="title function_">getContacts</span>().<span class="title function_">then</span>(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// 展示联系人列表</span></span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">contacts</span> = res.<span class="property">data</span>;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(res);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<p>发送文本消息</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> webIM <span class="keyword">from</span> <span class="string">&quot;../../sdk/uniapp-sdk-4.1.2&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; <span class="variable constant_">IM_CONFIG</span> &#125; <span class="keyword">from</span> <span class="string">&quot;../../utils/initIm&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; <span class="variable constant_">MSG_TYPE</span> &#125; <span class="keyword">from</span> <span class="string">&quot;../../consts&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// methods </span></span><br><span class="line"><span class="title function_">sendTextMsg</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">let</span> textMsg = webIM.<span class="property">message</span>.<span class="title function_">create</span>(&#123;</span><br><span class="line">    <span class="attr">chatType</span>: <span class="string">&quot;singleChat&quot;</span>,</span><br><span class="line">    <span class="attr">msg</span>: <span class="variable language_">this</span>.<span class="property">msg</span>,</span><br><span class="line">    <span class="attr">to</span>: <span class="variable language_">this</span>.<span class="property">to</span>,</span><br><span class="line">    <span class="attr">type</span>: <span class="variable constant_">MSG_TYPE</span>.<span class="property">txt</span></span><br><span class="line">  &#125;);</span><br><span class="line">  uni.<span class="property">conn</span>.<span class="title function_">send</span>(textMsg).<span class="title function_">then</span>(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">$store</span>.<span class="title function_">commit</span>(<span class="string">&quot;pushMessage&quot;</span>, &#123;</span><br><span class="line">      <span class="attr">uid</span>: <span class="variable language_">this</span>.<span class="property">to</span>,</span><br><span class="line">      <span class="attr">msg</span>: textMsg</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">msg</span> = <span class="string">&quot;&quot;</span>;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>发送图片消息</p>
+<blockquote>
+<p>发送附件消息，需要将附件上传后，拿到上传后的URL，去创建附件消息，然后发送。<br>如果没有自己的文件服务器，可以上传到环信的文件服务器。<a target="_blank" rel="noopener" href="http://docs-im-beta.easemob.com/document/server-side/message.html#%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0">文档</a></p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">  <span class="keyword">import</span> webIM <span class="keyword">from</span> <span class="string">&quot;../../sdk/uniapp-sdk-4.1.2&quot;</span>;</span><br><span class="line">  <span class="keyword">import</span> &#123; <span class="variable constant_">IM_CONFIG</span> &#125; <span class="keyword">from</span> <span class="string">&quot;../../utils/initIm&quot;</span>;</span><br><span class="line">  <span class="keyword">import</span> &#123; <span class="variable constant_">MSG_TYPE</span> &#125; <span class="keyword">from</span> <span class="string">&quot;../../consts&quot;</span>;</span><br><span class="line">  </span><br><span class="line">  <span class="comment">// methods</span></span><br><span class="line">  </span><br><span class="line">  <span class="title function_">selectImg</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">let</span> _this = <span class="variable language_">this</span>;</span><br><span class="line">  <span class="keyword">const</span> opt = &#123;</span><br><span class="line">    <span class="attr">count</span>: <span class="number">1</span>, <span class="comment">// 默认9</span></span><br><span class="line">    <span class="attr">sizeType</span>: [<span class="string">&quot;original&quot;</span>, <span class="string">&quot;compressed&quot;</span>], <span class="comment">// 可以指定是原图还是压缩图，默认二者都有</span></span><br><span class="line">    <span class="attr">sourceType</span>: [<span class="string">&quot;album&quot;</span>], <span class="comment">// 从相册选择</span></span><br><span class="line">    <span class="attr">success</span>: <span class="keyword">function</span> (<span class="params">res</span>) &#123;</span><br><span class="line">      <span class="keyword">let</span> tempFilePath = res.<span class="property">tempFilePaths</span>[<span class="number">0</span>];</span><br><span class="line">      <span class="keyword">var</span> str = <span class="variable constant_">IM_CONFIG</span>.<span class="property">appKey</span>.<span class="title function_">split</span>(<span class="string">&quot;#&quot;</span>);</span><br><span class="line">      <span class="keyword">var</span> token = uni.<span class="property">conn</span>.<span class="property">context</span>.<span class="property">accessToken</span>;</span><br><span class="line">      <span class="comment">// 上传文件到环信服务器</span></span><br><span class="line">      uni.<span class="title function_">uploadFile</span>(&#123;</span><br><span class="line">        <span class="attr">url</span>: <span class="string">`<span class="subst">$&#123;IM_CONFIG.apiUrl&#125;</span>/<span class="subst">$&#123;str[<span class="number">0</span>]&#125;</span>/<span class="subst">$&#123;str[<span class="number">1</span>]&#125;</span>/chatfiles`</span>,</span><br><span class="line">        <span class="attr">filePath</span>: tempFilePath,</span><br><span class="line">        <span class="attr">name</span>: <span class="string">&quot;file&quot;</span>,</span><br><span class="line">        <span class="attr">header</span>: &#123;</span><br><span class="line">          <span class="title class_">Authorization</span>: <span class="string">`Bearer <span class="subst">$&#123;token&#125;</span>`</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="title function_">success</span>(<span class="params">res</span>) &#123;</span><br><span class="line">          <span class="keyword">let</span> dt = <span class="title class_">JSON</span>.<span class="title function_">parse</span>(res.<span class="property">data</span>);</span><br><span class="line">          <span class="keyword">let</span> uuid = dt.<span class="property">entities</span>[<span class="number">0</span>].<span class="property">uuid</span>;</span><br><span class="line">          <span class="keyword">let</span> imgUrl = <span class="string">`<span class="subst">$&#123;dt.uri&#125;</span>/<span class="subst">$&#123;uuid&#125;</span>`</span>;</span><br><span class="line">          <span class="comment">// Web端需要在 WebIMConfig.js中 设置 useOwnUploadFun: true</span></span><br><span class="line">          <span class="keyword">const</span> imgMsg = webIM.<span class="property">message</span>.<span class="title function_">create</span>(&#123;</span><br><span class="line">            <span class="attr">chatType</span>: <span class="string">&quot;singleChat&quot;</span>,</span><br><span class="line">            <span class="attr">type</span>: <span class="variable constant_">MSG_TYPE</span>.<span class="property">img</span>,</span><br><span class="line">            <span class="attr">url</span>: imgUrl,</span><br><span class="line">            <span class="attr">to</span>: _this.<span class="property">to</span></span><br><span class="line">          &#125;);</span><br><span class="line">          uni.<span class="property">conn</span>.<span class="title function_">send</span>(imgMsg).<span class="title function_">then</span>(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">            _this.<span class="property">$store</span>.<span class="title function_">commit</span>(<span class="string">&quot;pushMessage&quot;</span>, &#123;</span><br><span class="line">              <span class="attr">uid</span>: _this.<span class="property">to</span>,</span><br><span class="line">              <span class="attr">msg</span>: imgMsg</span><br><span class="line">            &#125;);</span><br><span class="line">          &#125;);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  uni.<span class="title function_">chooseImage</span>(opt);</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>DEMO开发完毕，我们可以将其运行到小程序、h5、APP等平台，这样你就拥有了一个自己的即时通讯APP</p>
+</blockquote>
+<p>DEMO 演示: </p>
+<img style="display:inline-block; margin: 10px" src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/dc3ff060ea864b33859a6372bbdd3bb8~tplv-k3u1fbpfcp-watermark.image" width="20%">
+<img style="display:inline-block;margin: 10px"  src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6e53c0a6a1fc4cc7834a0afac0b6050f~tplv-k3u1fbpfcp-watermark.image" width="20%">
+<img style="display:inline-block;margin: 10px"  src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4de3728dafac412bbe2b172fff049567~tplv-k3u1fbpfcp-watermark.image?" width="20%">
+<img style="display:inline-block;margin: 10px"  src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/37418aa4b8d640c8a9d8558932507a00~tplv-k3u1fbpfcp-watermark.image" width="20%">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/IM/">#IM</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <div class="article-nav">
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                               rel="next"
+                               href="/2020/08/01/React%E8%87%AA%E5%AE%9A%E4%B9%89Hooks/"
+                            >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">React自定义Hooks</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                                <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+            
+                <div class="comment-container">
+                    
+<div class="comments-container">
+    <div id="comments-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fas fa-comments"></i>&nbsp;Comments
+    </div>
+    
+        
+            
+
+    <div class="gitalk-comment-container">
+        <div id="gitalk-container"></div>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+        <script  src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+        <script >
+          function loadGitalk() {
+            let __gitalk__pathname = decodeURI(location.pathname);
+            const __gitalk__pathnameLength = __gitalk__pathname.length;
+            const __gitalk__pathnameMaxLength = 50;
+            if (__gitalk__pathnameLength > __gitalk__pathnameMaxLength) {
+              __gitalk__pathname = __gitalk__pathname.substring(0, __gitalk__pathnameMaxLength - 3) + '...';
+            }
+
+            try {
+              Gitalk && new Gitalk({
+                clientID: 'c1066502745b5039f0b3',
+                clientSecret: '3f28cf9eeabae08e04501f1289d0635d1a5b870f',
+                repo: 'gitalk',
+                owner: 'Wster11',
+                admin: 'Wster11',
+                id: __gitalk__pathname,
+                language: 'en'
+              }).render('gitalk-container');
+            } catch (e) {
+              window.Gitalk = null;
+            }
+          }
+
+          if ('false' === 'true') {
+            const loadGitalkTimeout = setTimeout(() => {
+              loadGitalk();
+              clearTimeout(loadGitalkTimeout);
+            }, 1000);
+          } else {
+            window.addEventListener('DOMContentLoaded', loadGitalk);
+          }
+        </script>
+    </div>
+
+
+
+        
+    
+</div>
+
+                </div>
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%9B%E5%BB%BAuniapp%E9%A1%B9%E7%9B%AE"><span class="nav-number">1.</span> <span class="nav-text">创建uniapp项目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8Uniapp%E6%9E%84%E5%BB%BA%E7%8E%AF%E4%BF%A1%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF%E5%BA%94%E7%94%A8"><span class="nav-number">2.</span> <span class="nav-text">使用Uniapp构建环信即时通讯应用</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            
+<footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+                <span>2020</span> -
+            
+            2023
+            
+                &nbsp;<i class="fas fa-heart icon-animate"></i>
+                &nbsp;<a href="/">Rex Wang</a>
+            
+        </div>
+        
+        <!-- <div class="theme-info info-item">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.5.2</a>
+        </div> -->
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="tools-item flex-center go-to-comments">
+                <i class="fas fa-comment"></i>
+                <span class="post-comments-count"></span>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+
+
+
+
+
+<div class="post-scripts">
+    
+        
+<script src="/js/post-helper.js"></script>
+
+        
+            
+<script src="/js/libs/anime.min.js"></script>
+
+        
+        
+            
+<script src="/js/toc.js"></script>
+
+        
+    
+</div>
+
+
+
+</body>
+</html>
