@@ -9,7 +9,7 @@
     
     <title>
         
-            前端跨端框架Taro |
+            contentEditable - 避免粘贴DOM和样式，仅保留纯文本 |
         
         Rex&#39;s Blog
     </title>
@@ -149,7 +149,7 @@
         <div class="article-content-container">
 
             <div class="article-title">
-                <span class="title-hover-animation">前端跨端框架Taro</span>
+                <span class="title-hover-animation">contentEditable - 避免粘贴DOM和样式，仅保留纯文本</span>
             </div>
 
             
@@ -171,13 +171,13 @@
         
             <i class="fa-regular fa-calendar-plus"></i>&nbsp;
         
-        <span class="pc">2023-04-29 15:50:01</span>
-        <span class="mobile">2023-04-29 15:50</span>
+        <span class="pc">2023-07-29 15:50:01</span>
+        <span class="mobile">2023-07-29 15:50</span>
     </span>
     
         <span class="article-update-date article-meta-item">
         <i class="fas fa-file-pen"></i>&nbsp;
-        <span class="pc">2023-05-25 17:40:38</span>
+        <span class="pc">2023-08-03 18:41:55</span>
     </span>
     
     
@@ -187,7 +187,7 @@
             <ul>
                 
                     <li>
-                        <a href="/tags/Taro/">Taro</a>&nbsp;
+                        <a href="/tags/IM/">IM</a>&nbsp;
                     </li>
                 
             </ul>
@@ -206,24 +206,18 @@
             
 
             <div class="article-content keep-markdown-body">
-                <h1 id="前端跨端框架Taro"><a href="#前端跨端框架Taro" class="headerlink" title="前端跨端框架Taro"></a>前端跨端框架Taro</h1><h2 id="什么是Taro"><a href="#什么是Taro" class="headerlink" title="什么是Taro"></a>什么是Taro</h2><p>Taro是一款使用React语法开发多端应用的跨端框架。它支持编译成微信小程序、百度智能小程序、支付宝小程序、字节跳动小程序、H5、RN等多个平台，实现了一套代码多处运行的效果。</p>
-<h2 id="Taro特点"><a href="#Taro特点" class="headerlink" title="Taro特点"></a>Taro特点</h2><ul>
-<li>支持多端打包：Taro基于React语法，通过封装原生API来实现对多端的兼容。在Taro中，可以使用标准的React语法进行开发，同时也可以根据不同平台进行相关的适配处理。</li>
-<li>轻松上手：Taro具有低门槛的开发模式，并且提供了完善的文档和示例。对于熟悉React开发的前端工程师来说，学习Taro只需要较少的时间。</li>
-<li>性能优化：Taro对于小程序场景下的性能优化做了很多工作，比如对图片压缩、JS文件压缩、样式转换等方面进行了深度优化，保证了程序的高效运行。</li>
-<li>生态完整：Taro拥有完整的生态圈，社区提供了一些常用的UI库、模板和插件，可以快速提高开发效率。</li>
-</ul>
-<h2 id="Taro优缺点"><a href="#Taro优缺点" class="headerlink" title="Taro优缺点"></a>Taro优缺点</h2><h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><ul>
-<li>开发效率高：Taro支持一套代码多端运行，降低了开发成本，提供了开发效率。</li>
-<li>性能优秀：Taro对小程序场景做了很多性能优化工作，保证了程序的高效运行。</li>
-<li>社区活跃：Taro拥有完整的生态圈，社区提供了常用的UI库、模板和插件等，可以快速提升开发效率。</li>
-</ul>
-<h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><ul>
-<li>功能局限：Taro在实现跨端功能时，必须按照各个平台的规范进行开发，这就导致有些特殊功能难以实现。</li>
-<li>对React依赖较强：由于Taro使用的是React语法，因此需要掌握React相关知识才能更好的使用Taro。</li>
-</ul>
-<h2 id="Taro应用场景"><a href="#Taro应用场景" class="headerlink" title="Taro应用场景"></a>Taro应用场景</h2><p>Taro适用于需要开发多端应用的项目。比如，一个需求需要同时开发微信小程序和H5网站，此时使用Taro能够减少重复工作量，提高效率。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Taro是一款使用React语法开发多端应用的跨端框架，具有开发效率高、性能优秀、社区完整等优点。同时也存在功能局限和对React依赖较强的缺点。Taro适用于需要开发多端应用的项目，可以减少重复工作量，提高效率。</p>
+                <p>在Web开发中，<code>contentEditable</code> 属性允许我们将一个元素设为可编辑，从而实现类似于富文本编辑器的功能。然而，在使用 <code>contentEditable</code> 进行复制粘贴操作时，经常会遇到保留不必要的DOM结构和样式的问题。本文将介绍如何通过JavaScript处理粘贴的内容，以仅保留纯文本，而不包含额外的DOM元素和样式。</p>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>在默认情况下，使用 <code>contentEditable</code> 元素进行粘贴操作时，会将粘贴板中的内容直接插入到编辑区域，包括HTML标签、样式等。这可能会导致意外的显示问题和不一致的格式。为了解决这个问题，我们可以通过在粘贴事件中处理粘贴的内容，将其格式化为纯文本再插入编辑区域。</p>
+<h2 id="格式化粘贴内容"><a href="#格式化粘贴内容" class="headerlink" title="格式化粘贴内容"></a>格式化粘贴内容</h2><p>以下是一个示例代码，演示了如何使用JavaScript来格式化粘贴的内容，仅保留纯文本：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 将复制粘贴的html dom 转换为 string文本</span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">formatHtmlString</span> = (<span class="params">str</span>) =&gt; str?.<span class="title function_">replace</span>(<span class="regexp">/[\u00A0-\u9999&lt;&gt;]/gim</span>, <span class="function">(<span class="params">i</span>) =&gt;</span> <span class="string">&#x27;&#x27;</span>.<span class="title function_">concat</span>(<span class="string">&#x27;&amp;#&#x27;</span>, i.<span class="title function_">charCodeAt</span>(<span class="number">0</span>), <span class="string">&#x27;;&#x27;</span>));</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">onPaste</span> = (<span class="params">e</span>) =&gt; &#123;</span><br><span class="line">    e.<span class="title function_">preventDefault</span>();</span><br><span class="line">    <span class="variable language_">document</span>.<span class="title function_">execCommand</span>(</span><br><span class="line">        <span class="string">&#x27;insertHTML&#x27;</span>,</span><br><span class="line">        <span class="literal">false</span>,</span><br><span class="line">        <span class="title function_">formatHtmlString</span>(e?.<span class="property">clipboardData</span>.<span class="title function_">getData</span>(<span class="string">&#x27;text&#x27;</span>)),</span><br><span class="line">    );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在上述代码中，我们定义了一个 <code>formatHtmlString</code> 函数，它接受一个字符串作为参数，并使用正则表达式将其中的HTML标签转换为对应的HTML实体编码。这样做可以确保插入的内容只包含纯文本。</p>
+<p>接着，我们在 <code>onPaste</code> 函数中阻止默认的粘贴操作，然后使用 <code>document.execCommand</code> 方法将经过格式化的纯文本插入到编辑区域中。</p>
+<h4 id="应用到-contentEditable"><a href="#应用到-contentEditable" class="headerlink" title="应用到 contentEditable"></a>应用到 <code>contentEditable</code></h4><p>最后，我们将上述代码应用到具有 <code>contentEditable</code> 属性的 <code>&lt;div&gt;</code> 元素上，以实现只保留纯文本的粘贴操作：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div contentEditable=<span class="string">&quot;true&quot;</span> onPaste=&#123;onPaste&#125;/&gt;</span><br></pre></td></tr></table></figure>
+<p>通过将 <code>onPaste</code> 事件绑定到 <code>contentEditable</code> 元素上，我们可以在粘贴操作发生时进行内容格式化，从而确保只插入纯文本内容。</p>
+<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>通过以上方法，我们可以有效地处理 <code>contentEditable</code> 元素的粘贴操作，避免不必要的DOM结构和样式，只保留纯文本内容。这在构建富文本编辑器或其他需要编辑功能的Web应用中非常有用。</p>
+<p>请注意，由于浏览器的兼容性差异，可能需要对上述代码进行适当的调整和测试，以确保在不同浏览器中都能正常工作。</p>
+<p>希望本文能够帮助您更好地处理 <code>contentEditable</code> 元素的粘贴操作，提升用户体验和内容质量。</p>
 
             </div>
 
@@ -233,7 +227,7 @@
                 <ul class="post-tags-box">
                     
                         <li class="tag-item">
-                            <a href="/tags/Taro/">#Taro</a>&nbsp;
+                            <a href="/tags/IM/">#IM</a>&nbsp;
                         </li>
                     
                 </ul>
@@ -242,29 +236,14 @@
             
                 <div class="article-nav">
                     
-                        <div class="article-prev">
-                            <a class="prev"
-                               rel="prev"
-                               href="/2023/07/29/%E6%A0%BC%E5%BC%8F%E5%8C%96contentEditable/"
-                            >
-                            <span class="left arrow-icon flex-center">
-                              <i class="fas fa-chevron-left"></i>
-                            </span>
-                                <span class="title flex-center">
-                                <span class="post-nav-title-item">contentEditable - 避免粘贴DOM和样式，仅保留纯文本</span>
-                                <span class="post-nav-item">Prev posts</span>
-                            </span>
-                            </a>
-                        </div>
-                    
                     
                         <div class="article-next">
                             <a class="next"
                                rel="next"
-                               href="/2023/04/20/indexeddb%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%80%E4%BB%8B/"
+                               href="/2023/04/29/Taro%E7%AE%80%E4%BB%8B/"
                             >
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">indexeddb数据库简介</span>
+                                <span class="post-nav-title-item">前端跨端框架Taro</span>
                                 <span class="post-nav-item">Next posts</span>
                             </span>
                                 <span class="right arrow-icon flex-center">
@@ -342,7 +321,7 @@
             <div class="toc-content-container">
                 <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E7%AB%AF%E8%B7%A8%E7%AB%AF%E6%A1%86%E6%9E%B6Taro"><span class="nav-number">1.</span> <span class="nav-text">前端跨端框架Taro</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFTaro"><span class="nav-number">1.1.</span> <span class="nav-text">什么是Taro</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Taro%E7%89%B9%E7%82%B9"><span class="nav-number">1.2.</span> <span class="nav-text">Taro特点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Taro%E4%BC%98%E7%BC%BA%E7%82%B9"><span class="nav-number">1.3.</span> <span class="nav-text">Taro优缺点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BC%98%E7%82%B9"><span class="nav-number">1.3.1.</span> <span class="nav-text">优点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%BA%E7%82%B9"><span class="nav-number">1.3.2.</span> <span class="nav-text">缺点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Taro%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="nav-number">1.4.</span> <span class="nav-text">Taro应用场景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">1.5.</span> <span class="nav-text">总结</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%80%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%BC%E5%BC%8F%E5%8C%96%E7%B2%98%E8%B4%B4%E5%86%85%E5%AE%B9"><span class="nav-number">2.</span> <span class="nav-text">格式化粘贴内容</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BA%94%E7%94%A8%E5%88%B0-contentEditable"><span class="nav-number">2.0.1.</span> <span class="nav-text">应用到 contentEditable</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%93%E8%AE%BA"><span class="nav-number">3.</span> <span class="nav-text">结论</span></a></li></ol>
     </div>
 </div>
 
